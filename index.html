@@ -4,32 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Jarvis Content OS</title>
-  <meta name="description" content="AI-powered personal content assistant for creating, editing and publishing short-form video content.">
+  <meta name="description" content="AI-assisted creator workflow for preparing, reviewing and publishing short-form video content through official platform APIs.">
   <style>
     :root{color-scheme:dark;--bg:#07101f;--card:#0d1b30;--text:#eef6ff;--muted:#9fb2ca;--accent:#57d7ff}
     *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at 70% 0,#12325b 0,#07101f 46%,#040812 100%);color:var(--text)}
-    main{max-width:900px;margin:auto;padding:72px 24px}.badge{display:inline-block;border:1px solid #2e6a89;border-radius:999px;padding:7px 11px;color:var(--accent);font-size:13px}
-    h1{font-size:clamp(42px,8vw,76px);line-height:.98;margin:24px 0 18px;letter-spacing:-.04em}p{color:var(--muted);font-size:18px;line-height:1.65;max-width:720px}
-    .card{margin-top:36px;padding:24px;border:1px solid #1f3552;border-radius:20px;background:rgba(13,27,48,.78);backdrop-filter:blur(14px)}
-    nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:28px}a{color:#bfefff;text-decoration:none}a:hover{text-decoration:underline}
+    main{max-width:960px;margin:auto;padding:72px 24px}.badge{display:inline-block;border:1px solid #2e6a89;border-radius:999px;padding:7px 11px;color:var(--accent);font-size:13px}
+    h1{font-size:clamp(42px,8vw,76px);line-height:.98;margin:24px 0 18px;letter-spacing:-.04em}h2{margin-top:0}p,li{color:var(--muted);font-size:17px;line-height:1.65}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:30px}.card{padding:22px;border:1px solid #1f3552;border-radius:20px;background:rgba(13,27,48,.78)}
+    nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px}a{color:#bfefff;text-decoration:none}a:hover{text-decoration:underline}
     footer{margin-top:54px;color:#6f829a;font-size:13px}
   </style>
 </head>
 <body>
 <main>
   <span class="badge">Jarvis Content OS</span>
-  <h1>Create. Edit. Publish.</h1>
-  <p>Jarvis Content OS is a personal AI-assisted content workflow for preparing short-form video content, reviewing it, and sending approved content to supported social platforms through their official APIs.</p>
-  <div class="card">
-    <strong>Current integration focus</strong>
-    <p>Video preparation, review workflows and creator-authorized draft uploads. Publishing actions remain user-controlled and require explicit approval.</p>
+  <h1>AI-assisted creator workflow.</h1>
+  <p>Jarvis Content OS is a creator-focused content workflow under active development. It helps prepare short-form videos, generate captions and metadata, organize review steps and connect approved content to supported social platforms through official APIs.</p>
+
+  <div class="grid">
+    <div class="card"><h2>Prepare</h2><p>Analyze source footage, select moments, transcribe speech, create vertical video variants and apply reusable caption and motion templates.</p></div>
+    <div class="card"><h2>Review</h2><p>Keep publishing actions user-controlled. Content is prepared for review before any platform upload or publishing action is requested.</p></div>
+    <div class="card"><h2>Connect</h2><p>Use creator-authorized OAuth connections and official platform APIs for supported upload and publishing workflows.</p></div>
   </div>
+
+  <div class="card" style="margin-top:18px">
+    <h2>Current status</h2>
+    <p>The service is in pre-release integration testing. Platform capabilities depend on the permissions granted by each creator and on the review and API requirements of the relevant platform.</p>
+  </div>
+
   <nav>
     <a href="./privacy/">Privacy Policy</a>
     <a href="./terms/">Terms of Service</a>
-    <a href="https://github.com/Lukashydra/jarvis-content-os">GitHub</a>
+    <a href="./auth/tiktok/callback/">TikTok Authorization Callback</a>
+    <a href="https://github.com/Lukashydra/jarvis-content-os">Public Project Repository</a>
   </nav>
-  <footer>© 2026 Jarvis Content OS</footer>
+  <footer>© 2026 Jarvis Content OS · Contact: lukashermel0507@gmail.com</footer>
 </main>
 </body>
 </html>
